@@ -24,7 +24,7 @@ function DropAnywhere(fn, el) {
   if (!(this instanceof DropAnywhere)) return new DropAnywhere(fn);
   this.callback = fn;
   this.el = el;
-  this.el.id = 'drop-anywhere';
+  //this.el.id = 'drop-anywhere';
   this.events = events(this.el, this);
   this.classes = classes(this.el);
   this.winEvents = events(window, this);
