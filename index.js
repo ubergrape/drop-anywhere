@@ -20,10 +20,10 @@ module.exports = DropAnywhere;
  * @api public
  */
 
-function DropAnywhere(fn) {
+function DropAnywhere(fn, el) {
   if (!(this instanceof DropAnywhere)) return new DropAnywhere(fn);
   this.callback = fn;
-  this.el = document.createElement('div');
+  this.el = el;
   this.el.id = 'drop-anywhere';
   this.events = events(this.el, this);
   this.classes = classes(this.el);
