@@ -23,6 +23,8 @@ module.exports = DropAnywhere;
 function DropAnywhere(fn, el) {
   if (!(this instanceof DropAnywhere)) return new DropAnywhere(fn);
   this.callback = fn;
+  console.log("I am here");
+  console.log(el);
   this.el = el;
   //this.el.id = 'drop-anywhere';
   this.events = events(this.el, this);
