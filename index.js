@@ -26,7 +26,6 @@ function DropAnywhere(fn, el) {
   console.log("I am here");
   console.log(el);
   this.el = el;
-  //this.el.id = 'drop-anywhere';
   this.events = events(this.el, this);
   this.classes = classes(this.el);
   this.winEvents = events(window, this);
