@@ -7,7 +7,7 @@
   "dependencies": {
     "component/classes": "*",
     "component/events": "*",
-    "mbelraka/drop": "0.1.4"
+    "mbelraka/drop": "0.1.7"
   },
   "license": "MIT",
   "styles": ["drop-anywhere.css"],
