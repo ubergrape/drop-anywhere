@@ -1,6 +1,6 @@
 {
   "name": "drop-anywhere",
-  "repo": "component/drop-anywhere",
+  "repo": "mbelraka/drop-anywhere",
   "description": "Drop anywhere to upload a file",
   "version": "0.6.1",
   "keywords": ["upload", "drag", "drop", "file"],
