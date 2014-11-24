@@ -55,8 +55,14 @@ DropAnywhere.prototype.remove = function(){
  * Show the dropzone.
  */
 
-DropAnywhere.prototype.show = function(){
-  this.classes.add('show');
+DropAnywhere.prototype.show = function(e){
+	var dt = e.dataTransfer;
+	
+	//this condtition makes drop-anywhere work
+	//for desktop files exclusively
+	if(dt.types != null && (dt.types.indexOf ? dt.types.indexOf('Files') != -1 : dt.types.contains('application/x-moz-file'))) {
+		this.classes.add('show');
+	}
 };
 
 /**
