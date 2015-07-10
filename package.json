@@ -9,9 +9,14 @@
     "file"
   ],
   "dependencies": {
-    "classes-component": "*",
-    "drop-component": "0.1.x",
-    "events-component-2": "*"
+    "component-classes": "^1.2.4",
+    "component-events": "^1.0.9",
+    "component-drop": "ubergrape/drop"
+  },
+  "browser": {
+    "classes": "component-classes",
+    "events": "component-events",
+    "drop": "component-drop"
   },
   "license": "MIT",
   "component": {
